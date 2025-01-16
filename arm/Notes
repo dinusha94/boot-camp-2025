@@ -1,0 +1,37 @@
+
+
+source /home/dinusha/executorch/examples/arm/ethos-u-scratch/setup_path.sh
+
+cmake \
+  -DCMAKE_TOOLCHAIN_FILE=/home/dinusha/executorch/examples/arm/ethos-u-setup/arm-none-eabi-gcc.cmake \
+  -DTARGET_CPU=cortex-m55 \
+   -B build
+
+cmake --build build -- -j4 arm_simple_app
+
+       
+/home/dinusha/executorch/examples/arm/ethos-u-scratch/FVP-corstone300/models/Linux64_GCC-9.3/FVP_Corstone_SSE-300_Ethos-U55 \
+  -C cpu0.CFGITCMSZ=11  \
+  -C ethosu.num_macs=128 \
+  -C mps3_board.visualisation.disable-visualisation=1 \
+  -C mps3_board.telnetterminal0.start_telnet=0 \
+  -C mps3_board.uart0.out_file='-' \
+  -C mps3_board.uart0.shutdown_on_eot=1 \
+  -a ./build/arm_simple_app  \
+  --timelimit 220 
+
+-m mv2_arm_delegate.pte -i input.bin -o output_basename 
+
+export MODEL_FILE="mv2_arm_delegate.pte"
+export INPUT_FILE="input.bin"
+
+150,528
+
+conda activate executorch
+
+python3 aot_arm_compiler.py --model_name=custome_mv2 --target=ethos-u55-128 --delegate \
+--quantize --reorder_inputs= --output /home/dinusha/executorch/examples/arm --so_library=cmake-out-aot-lib/kernels/quantized/libquantized_ops_aot_lib.so \
+--system_config=Ethos_U55_High_End_Embedded --memory_mode=Shared_Sram
+
+
+python3 pte_to_header.py -p <path to model pte>
