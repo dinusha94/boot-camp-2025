@@ -1,0 +1,599 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:64 (project)"
+    message: |
+      The target system is: Generic -  - arm
+      The host system is: Linux - 5.15.0-130-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:64 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-exit.o): in function `exit':
+      exit.c:(.text.exit+0x28): undefined reference to `_exit'
+      /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-writer.o): in function `_write_r':
+      writer.c:(.text._write_r+0x24): undefined reference to `_write'
+      /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-closer.o): in function `_close_r':
+      closer.c:(.text._close_r+0x18): undefined reference to `_close'
+      /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-lseekr.o): in function `_lseek_r':
+      lseekr.c:(.text._lseek_r+0x24): undefined reference to `_lseek'
+      /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-readr.o): in function `_read_r':
+      readr.c:(.text._read_r+0x24): undefined reference to `_read'
+      /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
+      sbrkr.c:(.text._sbrk_r+0x18): undefined reference to `_sbrk'
+      collect2: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:64 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is GNU, found in:
+        /home/boot-camp-2025/DSP-session/build/CMakeFiles/3.30.5/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:64 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /opt/gcc-arm-none-eabi/bin/arm-none-eabi-g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-exit.o): in function `exit':
+      exit.c:(.text.exit+0x28): undefined reference to `_exit'
+      /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-writer.o): in function `_write_r':
+      writer.c:(.text._write_r+0x24): undefined reference to `_write'
+      /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-closer.o): in function `_close_r':
+      closer.c:(.text._close_r+0x18): undefined reference to `_close'
+      /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-lseekr.o): in function `_lseek_r':
+      lseekr.c:(.text._lseek_r+0x24): undefined reference to `_lseek'
+      /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-readr.o): in function `_read_r':
+      readr.c:(.text._read_r+0x24): undefined reference to `_read'
+      /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
+      sbrkr.c:(.text._sbrk_r+0x18): undefined reference to `_sbrk'
+      collect2: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:64 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /opt/gcc-arm-none-eabi/bin/arm-none-eabi-g++ 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/boot-camp-2025/DSP-session/build/CMakeFiles/3.30.5/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:64 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/boot-camp-2025/DSP-session/build/CMakeFiles/CMakeScratch/TryCompile-O7kATz"
+      binary: "/home/boot-camp-2025/DSP-session/build/CMakeFiles/CMakeScratch/TryCompile-O7kATz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "--specs=nosys.specs"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/boot-camp-2025/DSP-session/build/CMakeFiles/CMakeScratch/TryCompile-O7kATz'
+        
+        Run Build Command(s): /home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b43f1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b43f1.dir/build.make CMakeFiles/cmTC_b43f1.dir/build
+        gmake[1]: Entering directory '/home/boot-camp-2025/DSP-session/build/CMakeFiles/CMakeScratch/TryCompile-O7kATz'
+        Building C object CMakeFiles/cmTC_b43f1.dir/CMakeCCompilerABI.c.obj
+        /opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc   -v -o CMakeFiles/cmTC_b43f1.dir/CMakeCCompilerABI.c.obj -c /home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc
+        Target: arm-none-eabi
+        Configured with: /data/jenkins/workspace/GNU-toolchain/arm-13/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/install/arm-none-eabi --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)' --with-bugurl=https://bugs.linaro.org/
+        Thread model: single
+        Supported LTO compression algorithms: zlib
+        gcc version 13.2.1 20231009 (Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b43f1.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b43f1.dir/'
+         /opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/cc1 -quiet -v -iprefix /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/ -isysroot /opt/gcc-arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ /home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b43f1.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -o /tmp/cc4gbG9O.s
+        GNU C17 (Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)) version 13.2.1 20231009 (arm-none-eabi)
+        	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-44), GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/opt/gcc-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/include"
+        ignoring nonexistent directory "/opt/gcc-arm-none-eabi/bin/../arm-none-eabi/usr/local/include"
+        ignoring duplicate directory "/opt/gcc-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/include-fixed"
+        ignoring duplicate directory "/opt/gcc-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include"
+        ignoring duplicate directory "/opt/gcc-arm-none-eabi/bin/../arm-none-eabi/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include
+         /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include-fixed
+         /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include
+        End of search list.
+        Compiler executable checksum: 3af492648c23d64f81488ff0afc525a8
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b43f1.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b43f1.dir/'
+         /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_b43f1.dir/CMakeCCompilerABI.c.obj /tmp/cc4gbG9O.s
+        GNU assembler version 2.41.0 (arm-none-eabi) using BFD version (Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)) 2.41.0.20231009
+        COMPILER_PATH=/opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/:/opt/gcc-arm-none-eabi/bin/../libexec/gcc/:/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/:/opt/gcc-arm-none-eabi/bin/../lib/gcc/:/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/:/opt/gcc-arm-none-eabi/bin/../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b43f1.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b43f1.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_b43f1
+        /home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b43f1.dir/link.txt --verbose=1
+        /opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc --specs=nosys.specs -v CMakeFiles/cmTC_b43f1.dir/CMakeCCompilerABI.c.obj -o cmTC_b43f1
+        Using built-in specs.
+        Reading specs from /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/nosys.specs
+        rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence
+        COLLECT_GCC=/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc
+        COLLECT_LTO_WRAPPER=/opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/lto-wrapper
+        Target: arm-none-eabi
+        Configured with: /data/jenkins/workspace/GNU-toolchain/arm-13/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/install/arm-none-eabi --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)' --with-bugurl=https://bugs.linaro.org/
+        Thread model: single
+        Supported LTO compression algorithms: zlib
+        gcc version 13.2.1 20231009 (Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)) 
+        COMPILER_PATH=/opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/:/opt/gcc-arm-none-eabi/bin/../libexec/gcc/:/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/:/opt/gcc-arm-none-eabi/bin/../lib/gcc/:/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/:/opt/gcc-arm-none-eabi/bin/../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-v' '-o' 'cmTC_b43f1' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'cmTC_b43f1.'
+         /opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/collect2 -plugin /opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/liblto_plugin.so -plugin-opt=/opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpX6b6O.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys --sysroot=/opt/gcc-arm-none-eabi/bin/../arm-none-eabi -X -o cmTC_b43f1 /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crti.o /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crtbegin.o /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/crt0.o -L/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1 -L/opt/gcc-arm-none-eabi/bin/../lib/gcc -L/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib -L/opt/gcc-arm-none-eabi/bin/../arm-none-eabi/lib CMakeFiles/cmTC_b43f1.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lc --end-group --start-group -lgcc -lc -lnosys --end-group /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crtend.o /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crtn.o
+        /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-closer.o): in function `_close_r':
+        closer.c:(.text._close_r+0x18): warning: _close is not implemented and will always fail
+        /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-lseekr.o): in function `_lseek_r':
+        lseekr.c:(.text._lseek_r+0x24): warning: _lseek is not implemented and will always fail
+        /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-readr.o): in function `_read_r':
+        readr.c:(.text._read_r+0x24): warning: _read is not implemented and will always fail
+        /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-writer.o): in function `_write_r':
+        writer.c:(.text._write_r+0x24): warning: _write is not implemented and will always fail
+        COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-v' '-o' 'cmTC_b43f1' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'cmTC_b43f1.'
+        gmake[1]: Leaving directory '/home/boot-camp-2025/DSP-session/build/CMakeFiles/CMakeScratch/TryCompile-O7kATz'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:64 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include]
+          add: [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include-fixed]
+          add: [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include]
+        end of search list found
+        collapse include dir [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include] ==> [/opt/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include]
+        collapse include dir [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include-fixed] ==> [/opt/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include-fixed]
+        collapse include dir [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include] ==> [/opt/gcc-arm-none-eabi/arm-none-eabi/include]
+        implicit include dirs: [/opt/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include;/opt/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include-fixed;/opt/gcc-arm-none-eabi/arm-none-eabi/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:64 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/boot-camp-2025/DSP-session/build/CMakeFiles/CMakeScratch/TryCompile-O7kATz']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b43f1/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_b43f1.dir/build.make CMakeFiles/cmTC_b43f1.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/boot-camp-2025/DSP-session/build/CMakeFiles/CMakeScratch/TryCompile-O7kATz']
+        ignore line: [Building C object CMakeFiles/cmTC_b43f1.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc   -v -o CMakeFiles/cmTC_b43f1.dir/CMakeCCompilerABI.c.obj -c /home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc]
+        ignore line: [Target: arm-none-eabi]
+        ignore line: [Configured with: /data/jenkins/workspace/GNU-toolchain/arm-13/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/install/arm-none-eabi --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)' --with-bugurl=https://bugs.linaro.org/]
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.2.1 20231009 (Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b43f1.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b43f1.dir/']
+        ignore line: [ /opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/cc1 -quiet -v -iprefix /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/ -isysroot /opt/gcc-arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ /home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b43f1.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -o /tmp/cc4gbG9O.s]
+        ignore line: [GNU C17 (Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)) version 13.2.1 20231009 (arm-none-eabi)]
+        ignore line: [	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-44)  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/opt/gcc-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/include"]
+        ignore line: [ignoring nonexistent directory "/opt/gcc-arm-none-eabi/bin/../arm-none-eabi/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/opt/gcc-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/include-fixed"]
+        ignore line: [ignoring duplicate directory "/opt/gcc-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include"]
+        ignore line: [ignoring duplicate directory "/opt/gcc-arm-none-eabi/bin/../arm-none-eabi/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include]
+        ignore line: [ /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include-fixed]
+        ignore line: [ /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 3af492648c23d64f81488ff0afc525a8]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b43f1.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b43f1.dir/']
+        ignore line: [ /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_b43f1.dir/CMakeCCompilerABI.c.obj /tmp/cc4gbG9O.s]
+        ignore line: [GNU assembler version 2.41.0 (arm-none-eabi) using BFD version (Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)) 2.41.0.20231009]
+        ignore line: [COMPILER_PATH=/opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/:/opt/gcc-arm-none-eabi/bin/../libexec/gcc/:/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/]
+        ignore line: [LIBRARY_PATH=/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/:/opt/gcc-arm-none-eabi/bin/../lib/gcc/:/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/:/opt/gcc-arm-none-eabi/bin/../arm-none-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b43f1.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b43f1.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_b43f1]
+        ignore line: [/home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b43f1.dir/link.txt --verbose=1]
+        ignore line: [/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc --specs=nosys.specs -v CMakeFiles/cmTC_b43f1.dir/CMakeCCompilerABI.c.obj -o cmTC_b43f1]
+        ignore line: [Using built-in specs.]
+        ignore line: [Reading specs from /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/nosys.specs]
+        ignore line: [rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence]
+        ignore line: [COLLECT_GCC=/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/lto-wrapper]
+        ignore line: [Target: arm-none-eabi]
+        ignore line: [Configured with: /data/jenkins/workspace/GNU-toolchain/arm-13/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/install/arm-none-eabi --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)' --with-bugurl=https://bugs.linaro.org/]
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.2.1 20231009 (Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)) ]
+        ignore line: [COMPILER_PATH=/opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/:/opt/gcc-arm-none-eabi/bin/../libexec/gcc/:/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/]
+        ignore line: [LIBRARY_PATH=/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/:/opt/gcc-arm-none-eabi/bin/../lib/gcc/:/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/:/opt/gcc-arm-none-eabi/bin/../arm-none-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-v' '-o' 'cmTC_b43f1' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'cmTC_b43f1.']
+        link line: [ /opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/collect2 -plugin /opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/liblto_plugin.so -plugin-opt=/opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpX6b6O.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys --sysroot=/opt/gcc-arm-none-eabi/bin/../arm-none-eabi -X -o cmTC_b43f1 /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crti.o /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crtbegin.o /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/crt0.o -L/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1 -L/opt/gcc-arm-none-eabi/bin/../lib/gcc -L/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib -L/opt/gcc-arm-none-eabi/bin/../arm-none-eabi/lib CMakeFiles/cmTC_b43f1.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lc --end-group --start-group -lgcc -lc -lnosys --end-group /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crtend.o /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crtn.o]
+          arg [/opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccpX6b6O.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
+          arg [--sysroot=/opt/gcc-arm-none-eabi/bin/../arm-none-eabi] ==> ignore
+          arg [-X] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_b43f1] ==> ignore
+          arg [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crti.o] ==> obj [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crti.o]
+          arg [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crtbegin.o] ==> obj [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crtbegin.o]
+          arg [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/crt0.o] ==> obj [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/crt0.o]
+          arg [-L/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1] ==> dir [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1]
+          arg [-L/opt/gcc-arm-none-eabi/bin/../lib/gcc] ==> dir [/opt/gcc-arm-none-eabi/bin/../lib/gcc]
+          arg [-L/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib] ==> dir [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib]
+          arg [-L/opt/gcc-arm-none-eabi/bin/../arm-none-eabi/lib] ==> dir [/opt/gcc-arm-none-eabi/bin/../arm-none-eabi/lib]
+          arg [CMakeFiles/cmTC_b43f1.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [--start-group] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [--end-group] ==> ignore
+          arg [--start-group] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lnosys] ==> lib [nosys]
+          arg [--end-group] ==> ignore
+          arg [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crtend.o] ==> obj [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crtend.o]
+          arg [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crtn.o] ==> obj [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crtn.o]
+        ignore line: [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-closer.o): in function `_close_r':]
+        ignore line: [closer.c:(.text._close_r+0x18): warning: _close is not implemented and will always fail]
+        ignore line: [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-lseekr.o): in function `_lseek_r':]
+        ignore line: [lseekr.c:(.text._lseek_r+0x24): warning: _lseek is not implemented and will always fail]
+        ignore line: [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-readr.o): in function `_read_r':]
+        ignore line: [readr.c:(.text._read_r+0x24): warning: _read is not implemented and will always fail]
+        ignore line: [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-writer.o): in function `_write_r':]
+        ignore line: [writer.c:(.text._write_r+0x24): warning: _write is not implemented and will always fail]
+        ignore line: [COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-v' '-o' 'cmTC_b43f1' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'cmTC_b43f1.']
+        ignore line: [gmake[1]: Leaving directory '/home/boot-camp-2025/DSP-session/build/CMakeFiles/CMakeScratch/TryCompile-O7kATz']
+        ignore line: []
+        ignore line: []
+        collapse obj [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crti.o] ==> [/opt/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/crti.o]
+        collapse obj [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crtbegin.o] ==> [/opt/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/crtbegin.o]
+        collapse obj [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/crt0.o] ==> [/opt/gcc-arm-none-eabi/arm-none-eabi/lib/crt0.o]
+        collapse obj [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crtend.o] ==> [/opt/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/crtend.o]
+        collapse obj [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crtn.o] ==> [/opt/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/crtn.o]
+        collapse library dir [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1] ==> [/opt/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1]
+        collapse library dir [/opt/gcc-arm-none-eabi/bin/../lib/gcc] ==> [/opt/gcc-arm-none-eabi/lib/gcc]
+        collapse library dir [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib] ==> [/opt/gcc-arm-none-eabi/arm-none-eabi/lib]
+        collapse library dir [/opt/gcc-arm-none-eabi/bin/../arm-none-eabi/lib] ==> [/opt/gcc-arm-none-eabi/arm-none-eabi/lib]
+        implicit libs: [gcc;c;gcc;c;nosys]
+        implicit objs: [/opt/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/crti.o;/opt/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/crtbegin.o;/opt/gcc-arm-none-eabi/arm-none-eabi/lib/crt0.o;/opt/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/crtend.o;/opt/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/crtn.o]
+        implicit dirs: [/opt/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1;/opt/gcc-arm-none-eabi/lib/gcc;/opt/gcc-arm-none-eabi/arm-none-eabi/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:64 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/boot-camp-2025/DSP-session/build/CMakeFiles/CMakeScratch/TryCompile-GQS9gw"
+      binary: "/home/boot-camp-2025/DSP-session/build/CMakeFiles/CMakeScratch/TryCompile-GQS9gw"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "--specs=nosys.specs"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/boot-camp-2025/DSP-session/build/CMakeFiles/CMakeScratch/TryCompile-GQS9gw'
+        
+        Run Build Command(s): /home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f4d5d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f4d5d.dir/build.make CMakeFiles/cmTC_f4d5d.dir/build
+        gmake[1]: Entering directory '/home/boot-camp-2025/DSP-session/build/CMakeFiles/CMakeScratch/TryCompile-GQS9gw'
+        Building CXX object CMakeFiles/cmTC_f4d5d.dir/CMakeCXXCompilerABI.cpp.obj
+        /opt/gcc-arm-none-eabi/bin/arm-none-eabi-g++   -v -o CMakeFiles/cmTC_f4d5d.dir/CMakeCXXCompilerABI.cpp.obj -c /home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/opt/gcc-arm-none-eabi/bin/arm-none-eabi-g++
+        Target: arm-none-eabi
+        Configured with: /data/jenkins/workspace/GNU-toolchain/arm-13/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/install/arm-none-eabi --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)' --with-bugurl=https://bugs.linaro.org/
+        Thread model: single
+        Supported LTO compression algorithms: zlib
+        gcc version 13.2.1 20231009 (Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f4d5d.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_f4d5d.dir/'
+         /opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/cc1plus -quiet -v -iprefix /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/ -isysroot /opt/gcc-arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ /home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_f4d5d.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -o /tmp/cczd3N05.s
+        GNU C++17 (Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)) version 13.2.1 20231009 (arm-none-eabi)
+        	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-44), GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/opt/gcc-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1"
+        ignoring duplicate directory "/opt/gcc-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi"
+        ignoring duplicate directory "/opt/gcc-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1/backward"
+        ignoring duplicate directory "/opt/gcc-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/include"
+        ignoring nonexistent directory "/opt/gcc-arm-none-eabi/bin/../arm-none-eabi/usr/local/include"
+        ignoring duplicate directory "/opt/gcc-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/include-fixed"
+        ignoring duplicate directory "/opt/gcc-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include"
+        ignoring duplicate directory "/opt/gcc-arm-none-eabi/bin/../arm-none-eabi/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1
+         /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi
+         /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1/backward
+         /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include
+         /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include-fixed
+         /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include
+        End of search list.
+        Compiler executable checksum: c5cd373d816abe4682fcfe3b0ef0c0c5
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f4d5d.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_f4d5d.dir/'
+         /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_f4d5d.dir/CMakeCXXCompilerABI.cpp.obj /tmp/cczd3N05.s
+        GNU assembler version 2.41.0 (arm-none-eabi) using BFD version (Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)) 2.41.0.20231009
+        COMPILER_PATH=/opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/:/opt/gcc-arm-none-eabi/bin/../libexec/gcc/:/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/:/opt/gcc-arm-none-eabi/bin/../lib/gcc/:/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/:/opt/gcc-arm-none-eabi/bin/../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f4d5d.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_f4d5d.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_f4d5d
+        /home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4d5d.dir/link.txt --verbose=1
+        /opt/gcc-arm-none-eabi/bin/arm-none-eabi-g++ --specs=nosys.specs -v CMakeFiles/cmTC_f4d5d.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_f4d5d
+        Using built-in specs.
+        Reading specs from /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/nosys.specs
+        rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence
+        COLLECT_GCC=/opt/gcc-arm-none-eabi/bin/arm-none-eabi-g++
+        COLLECT_LTO_WRAPPER=/opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/lto-wrapper
+        Target: arm-none-eabi
+        Configured with: /data/jenkins/workspace/GNU-toolchain/arm-13/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/install/arm-none-eabi --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)' --with-bugurl=https://bugs.linaro.org/
+        Thread model: single
+        Supported LTO compression algorithms: zlib
+        gcc version 13.2.1 20231009 (Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)) 
+        COMPILER_PATH=/opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/:/opt/gcc-arm-none-eabi/bin/../libexec/gcc/:/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/:/opt/gcc-arm-none-eabi/bin/../lib/gcc/:/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/:/opt/gcc-arm-none-eabi/bin/../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-v' '-o' 'cmTC_f4d5d' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'cmTC_f4d5d.'
+         /opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/collect2 -plugin /opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/liblto_plugin.so -plugin-opt=/opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRCZ7oE.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys --sysroot=/opt/gcc-arm-none-eabi/bin/../arm-none-eabi -X -o cmTC_f4d5d /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crti.o /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crtbegin.o /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/crt0.o -L/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1 -L/opt/gcc-arm-none-eabi/bin/../lib/gcc -L/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib -L/opt/gcc-arm-none-eabi/bin/../arm-none-eabi/lib CMakeFiles/cmTC_f4d5d.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm --start-group -lgcc -lc --end-group --start-group -lgcc -lc -lnosys --end-group /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crtend.o /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crtn.o
+        /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-closer.o): in function `_close_r':
+        closer.c:(.text._close_r+0x18): warning: _close is not implemented and will always fail
+        /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-lseekr.o): in function `_lseek_r':
+        lseekr.c:(.text._lseek_r+0x24): warning: _lseek is not implemented and will always fail
+        /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-readr.o): in function `_read_r':
+        readr.c:(.text._read_r+0x24): warning: _read is not implemented and will always fail
+        /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-writer.o): in function `_write_r':
+        writer.c:(.text._write_r+0x24): warning: _write is not implemented and will always fail
+        COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-v' '-o' 'cmTC_f4d5d' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'cmTC_f4d5d.'
+        gmake[1]: Leaving directory '/home/boot-camp-2025/DSP-session/build/CMakeFiles/CMakeScratch/TryCompile-GQS9gw'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:64 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1]
+          add: [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi]
+          add: [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1/backward]
+          add: [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include]
+          add: [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include-fixed]
+          add: [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include]
+        end of search list found
+        collapse include dir [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1] ==> [/opt/gcc-arm-none-eabi/arm-none-eabi/include/c++/13.2.1]
+        collapse include dir [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi] ==> [/opt/gcc-arm-none-eabi/arm-none-eabi/include/c++/13.2.1/arm-none-eabi]
+        collapse include dir [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1/backward] ==> [/opt/gcc-arm-none-eabi/arm-none-eabi/include/c++/13.2.1/backward]
+        collapse include dir [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include] ==> [/opt/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include]
+        collapse include dir [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include-fixed] ==> [/opt/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include-fixed]
+        collapse include dir [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include] ==> [/opt/gcc-arm-none-eabi/arm-none-eabi/include]
+        implicit include dirs: [/opt/gcc-arm-none-eabi/arm-none-eabi/include/c++/13.2.1;/opt/gcc-arm-none-eabi/arm-none-eabi/include/c++/13.2.1/arm-none-eabi;/opt/gcc-arm-none-eabi/arm-none-eabi/include/c++/13.2.1/backward;/opt/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include;/opt/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include-fixed;/opt/gcc-arm-none-eabi/arm-none-eabi/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:64 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/boot-camp-2025/DSP-session/build/CMakeFiles/CMakeScratch/TryCompile-GQS9gw']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f4d5d/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_f4d5d.dir/build.make CMakeFiles/cmTC_f4d5d.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/boot-camp-2025/DSP-session/build/CMakeFiles/CMakeScratch/TryCompile-GQS9gw']
+        ignore line: [Building CXX object CMakeFiles/cmTC_f4d5d.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [/opt/gcc-arm-none-eabi/bin/arm-none-eabi-g++   -v -o CMakeFiles/cmTC_f4d5d.dir/CMakeCXXCompilerABI.cpp.obj -c /home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/gcc-arm-none-eabi/bin/arm-none-eabi-g++]
+        ignore line: [Target: arm-none-eabi]
+        ignore line: [Configured with: /data/jenkins/workspace/GNU-toolchain/arm-13/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/install/arm-none-eabi --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)' --with-bugurl=https://bugs.linaro.org/]
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.2.1 20231009 (Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f4d5d.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_f4d5d.dir/']
+        ignore line: [ /opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/cc1plus -quiet -v -iprefix /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/ -isysroot /opt/gcc-arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ /home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_f4d5d.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -o /tmp/cczd3N05.s]
+        ignore line: [GNU C++17 (Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)) version 13.2.1 20231009 (arm-none-eabi)]
+        ignore line: [	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-44)  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/opt/gcc-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1"]
+        ignore line: [ignoring duplicate directory "/opt/gcc-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi"]
+        ignore line: [ignoring duplicate directory "/opt/gcc-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1/backward"]
+        ignore line: [ignoring duplicate directory "/opt/gcc-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/include"]
+        ignore line: [ignoring nonexistent directory "/opt/gcc-arm-none-eabi/bin/../arm-none-eabi/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/opt/gcc-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/include-fixed"]
+        ignore line: [ignoring duplicate directory "/opt/gcc-arm-none-eabi/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include"]
+        ignore line: [ignoring duplicate directory "/opt/gcc-arm-none-eabi/bin/../arm-none-eabi/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1]
+        ignore line: [ /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi]
+        ignore line: [ /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include/c++/13.2.1/backward]
+        ignore line: [ /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include]
+        ignore line: [ /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/include-fixed]
+        ignore line: [ /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: c5cd373d816abe4682fcfe3b0ef0c0c5]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f4d5d.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_f4d5d.dir/']
+        ignore line: [ /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_f4d5d.dir/CMakeCXXCompilerABI.cpp.obj /tmp/cczd3N05.s]
+        ignore line: [GNU assembler version 2.41.0 (arm-none-eabi) using BFD version (Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)) 2.41.0.20231009]
+        ignore line: [COMPILER_PATH=/opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/:/opt/gcc-arm-none-eabi/bin/../libexec/gcc/:/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/]
+        ignore line: [LIBRARY_PATH=/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/:/opt/gcc-arm-none-eabi/bin/../lib/gcc/:/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/:/opt/gcc-arm-none-eabi/bin/../arm-none-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f4d5d.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_f4d5d.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_f4d5d]
+        ignore line: [/home/ml-embedded-evaluation-kit/resources_downloaded/env/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4d5d.dir/link.txt --verbose=1]
+        ignore line: [/opt/gcc-arm-none-eabi/bin/arm-none-eabi-g++ --specs=nosys.specs -v CMakeFiles/cmTC_f4d5d.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_f4d5d]
+        ignore line: [Using built-in specs.]
+        ignore line: [Reading specs from /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/nosys.specs]
+        ignore line: [rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence]
+        ignore line: [COLLECT_GCC=/opt/gcc-arm-none-eabi/bin/arm-none-eabi-g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/lto-wrapper]
+        ignore line: [Target: arm-none-eabi]
+        ignore line: [Configured with: /data/jenkins/workspace/GNU-toolchain/arm-13/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-13/build-arm-none-eabi/install/arm-none-eabi --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)' --with-bugurl=https://bugs.linaro.org/]
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.2.1 20231009 (Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)) ]
+        ignore line: [COMPILER_PATH=/opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/:/opt/gcc-arm-none-eabi/bin/../libexec/gcc/:/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/]
+        ignore line: [LIBRARY_PATH=/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/:/opt/gcc-arm-none-eabi/bin/../lib/gcc/:/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/:/opt/gcc-arm-none-eabi/bin/../arm-none-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-v' '-o' 'cmTC_f4d5d' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'cmTC_f4d5d.']
+        link line: [ /opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/collect2 -plugin /opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/liblto_plugin.so -plugin-opt=/opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRCZ7oE.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys --sysroot=/opt/gcc-arm-none-eabi/bin/../arm-none-eabi -X -o cmTC_f4d5d /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crti.o /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crtbegin.o /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/crt0.o -L/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1 -L/opt/gcc-arm-none-eabi/bin/../lib/gcc -L/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib -L/opt/gcc-arm-none-eabi/bin/../arm-none-eabi/lib CMakeFiles/cmTC_f4d5d.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm --start-group -lgcc -lc --end-group --start-group -lgcc -lc -lnosys --end-group /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crtend.o /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crtn.o]
+          arg [/opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/opt/gcc-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/13.2.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccRCZ7oE.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
+          arg [--sysroot=/opt/gcc-arm-none-eabi/bin/../arm-none-eabi] ==> ignore
+          arg [-X] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_f4d5d] ==> ignore
+          arg [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crti.o] ==> obj [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crti.o]
+          arg [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crtbegin.o] ==> obj [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crtbegin.o]
+          arg [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/crt0.o] ==> obj [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/crt0.o]
+          arg [-L/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1] ==> dir [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1]
+          arg [-L/opt/gcc-arm-none-eabi/bin/../lib/gcc] ==> dir [/opt/gcc-arm-none-eabi/bin/../lib/gcc]
+          arg [-L/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib] ==> dir [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib]
+          arg [-L/opt/gcc-arm-none-eabi/bin/../arm-none-eabi/lib] ==> dir [/opt/gcc-arm-none-eabi/bin/../arm-none-eabi/lib]
+          arg [CMakeFiles/cmTC_f4d5d.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [--start-group] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [--end-group] ==> ignore
+          arg [--start-group] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lnosys] ==> lib [nosys]
+          arg [--end-group] ==> ignore
+          arg [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crtend.o] ==> obj [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crtend.o]
+          arg [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crtn.o] ==> obj [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crtn.o]
+        ignore line: [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-closer.o): in function `_close_r':]
+        ignore line: [closer.c:(.text._close_r+0x18): warning: _close is not implemented and will always fail]
+        ignore line: [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-lseekr.o): in function `_lseek_r':]
+        ignore line: [lseekr.c:(.text._lseek_r+0x24): warning: _lseek is not implemented and will always fail]
+        ignore line: [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-readr.o): in function `_read_r':]
+        ignore line: [readr.c:(.text._read_r+0x24): warning: _read is not implemented and will always fail]
+        ignore line: [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld: /opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-writer.o): in function `_write_r':]
+        ignore line: [writer.c:(.text._write_r+0x24): warning: _write is not implemented and will always fail]
+        ignore line: [COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-v' '-o' 'cmTC_f4d5d' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'cmTC_f4d5d.']
+        ignore line: [gmake[1]: Leaving directory '/home/boot-camp-2025/DSP-session/build/CMakeFiles/CMakeScratch/TryCompile-GQS9gw']
+        ignore line: []
+        ignore line: []
+        collapse obj [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crti.o] ==> [/opt/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/crti.o]
+        collapse obj [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crtbegin.o] ==> [/opt/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/crtbegin.o]
+        collapse obj [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/crt0.o] ==> [/opt/gcc-arm-none-eabi/arm-none-eabi/lib/crt0.o]
+        collapse obj [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crtend.o] ==> [/opt/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/crtend.o]
+        collapse obj [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/crtn.o] ==> [/opt/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/crtn.o]
+        collapse library dir [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1] ==> [/opt/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1]
+        collapse library dir [/opt/gcc-arm-none-eabi/bin/../lib/gcc] ==> [/opt/gcc-arm-none-eabi/lib/gcc]
+        collapse library dir [/opt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib] ==> [/opt/gcc-arm-none-eabi/arm-none-eabi/lib]
+        collapse library dir [/opt/gcc-arm-none-eabi/bin/../arm-none-eabi/lib] ==> [/opt/gcc-arm-none-eabi/arm-none-eabi/lib]
+        implicit libs: [stdc++;m;gcc;c;gcc;c;nosys]
+        implicit objs: [/opt/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/crti.o;/opt/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/crtbegin.o;/opt/gcc-arm-none-eabi/arm-none-eabi/lib/crt0.o;/opt/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/crtend.o;/opt/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/crtn.o]
+        implicit dirs: [/opt/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1;/opt/gcc-arm-none-eabi/lib/gcc;/opt/gcc-arm-none-eabi/arm-none-eabi/lib]
+        implicit fwks: []
+      
+      
+...

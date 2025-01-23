@@ -31,8 +31,8 @@ cmake_minimum_required(VERSION 3.16)
 set(CMAKE_TOOLCHAIN_FILE ${CMAKE_CURRENT_SOURCE_DIR}/toolchain.cmake)
 
 set(HOME $ENV{HOME})
-set(CMSISDSP ${CMAKE_CURRENT_SOURCE_DIR}/CMSIS-DSP)
-set(CMSISCORE ${CMAKE_CURRENT_SOURCE_DIR}/CMSIS_5/CMSIS/Core)
+set(CMSISDSP /home/boot-camp-2025/DSP-session/CMSIS-DSP)
+set(CMSISCORE /home/boot-camp-2025/DSP-session/CMSIS_5/CMSIS/Core)
 
 add_compile_options(
     -mcpu=cortex-m4

@@ -17,11 +17,7 @@
 cmake_minimum_required(VERSION 3.20)
 project(arm_simple_dsp_app)
 
-
-set(CMSISDSP /home/CV/CMSIS-DSP)
-set(CMSISCORE /home/CV/CMSIS_5/CMSIS/Core)
-
-set(LIBS_DIR "${CMAKE_SOURCE_DIR}/../libs/arm")
+# set(LIBS_DIR "${CMAKE_SOURCE_DIR}/../libs/arm")
 
 # Selects timing adapter values matching system_config.
 # Default is Ethos_U55_High_End_Embedded, simulating optimal hardware for the Corestone-300.
@@ -32,7 +28,7 @@ set(SYSTEM_CONFIG "Ethos_U55_High_End_Embedded" CACHE STRING "System config")
 # libraries. We link against ethosu_target_init which includes all of these
 # dependencies.
 # if(SYSTEM_CONFIG STREQUAL "Ethos_U55_High_End_Embedded")
-  add_subdirectory(/home/dinusha/executorch/examples/arm/ethos-u-scratch/ethos-u/core_platform/targets/corstone-300 target)
+  add_subdirectory(/home/boot-camp-2025/corstone-300 target)
   set(TARGET_BOARD "corstone-300")
   target_compile_definitions(ethosu_target_common INTERFACE
       # ETHOSU_MODEL=0 place pte file/data in SRAM area
@@ -81,16 +77,15 @@ target_sources(
 
 target_link_options( arm_simple_app PUBLIC LINKER:-Map=arm_simple_app.map )
 
-target_include_directories(test_app PRIVATE
-    /home/CV/CMSIS-DSP/Include
-    /home/CV/CMSIS_5/CMSIS/Core/Include
-    /home/CV/simple-dsp-program/include
+target_include_directories(arm_simple_app PRIVATE
+    /home/boot-camp-2025/DSP-session/CMSIS-DSP/Include
+    /home/boot-camp-2025/DSP-session/CMSIS_5/CMSIS/Core/Include
 )
 
 # link math library
-target_link_libraries(test_app PRIVATE 
+target_link_libraries(arm_simple_app PRIVATE 
     m
-    /home/CV/build/bin_dsp/libCMSISDSP.a
+    /home/boot-camp-2025/DSP-session/build/bin_dsp/libCMSISDSP.a
     )
 
 

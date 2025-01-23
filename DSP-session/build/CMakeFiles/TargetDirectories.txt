@@ -1,0 +1,5 @@
+/home/boot-camp-2025/DSP-session/build/CMakeFiles/edit_cache.dir
+/home/boot-camp-2025/DSP-session/build/CMakeFiles/rebuild_cache.dir
+/home/boot-camp-2025/DSP-session/build/bin_dsp/CMakeFiles/CMSISDSP.dir
+/home/boot-camp-2025/DSP-session/build/bin_dsp/CMakeFiles/edit_cache.dir
+/home/boot-camp-2025/DSP-session/build/bin_dsp/CMakeFiles/rebuild_cache.dir
