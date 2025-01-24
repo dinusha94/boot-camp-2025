@@ -38,7 +38,7 @@ const float32_t supportVectors[NB_SUPPORT_VECTORS*VECTOR_DIMENSION]={ 1.15831693
 const int32_t   classes[2]={0,1};
 
 
-int32_t main(void)
+int main()
 {
   /* Array of input data */
   float32_t in[VECTOR_DIMENSION];
@@ -88,4 +88,27 @@ int32_t main(void)
   /* Result should be 1 : Second class */
   printf("Result = %d\n", result);
 
+  return 0;
+
 }
+
+
+
+// #include <errno.h>
+// #include <stdio.h>
+// #include <unistd.h>
+// #include <memory>
+// #include <vector>
+
+
+
+// int main(int argc, const char* argv[]) {
+
+//   (void)argc;
+//   (void)argv;
+
+//    printf("Hello .... \n");
+
+ 
+//   return 0;
+// }
