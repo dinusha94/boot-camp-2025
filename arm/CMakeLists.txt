@@ -23,7 +23,7 @@ set(SYSTEM_CONFIG "Ethos_U55_High_End_Embedded" CACHE STRING "System config")
 # libraries. We link against ethosu_target_init which includes all of these
 # dependencies.
 # if(SYSTEM_CONFIG STREQUAL "Ethos_U55_High_End_Embedded")
-  add_subdirectory(/home/dinusha/executorch/examples/arm/ethos-u-scratch/ethos-u/core_platform/targets/corstone-300 target)
+  add_subdirectory(/workspace/executorch/examples/arm/ethos-u-scratch/ethos-u/core_platform/targets/corstone-300 target)
   set(TARGET_BOARD "corstone-300")
   target_compile_definitions(ethosu_target_common INTERFACE
       # ETHOSU_MODEL=0 place pte file/data in SRAM area
