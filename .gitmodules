@@ -1,0 +1,6 @@
+[submodule "DSP-session/CMSIS-DSP"]
+	path = DSP-session/CMSIS-DSP
+	url = https://github.com/ARM-software/CMSIS-DSP.git
+[submodule "DSP-session/CMSIS-DSP"]
+    path = DSP-session/CMSIS-DSP
+    url = https://github.com/ARM-software/CMSIS-DSP.git
