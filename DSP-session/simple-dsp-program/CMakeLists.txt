@@ -1,14 +1,3 @@
-# cmake_minimum_required(VERSION 3.16)
-# set(CMAKE_TOOLCHAIN_FILE ${CMAKE_CURRENT_SOURCE_DIR}/toolchain.cmake)
-
-# project(test_project C CXX ASM)
-# set(CMAKE_C_STANDARD 11)
-# set(CMAKE_CXX_STANDARD 17)
-
-
-################################################################################################################
-
-
 # Copyright 2023-2024 Arm Limited and/or its affiliates.
 #
 # This source code is licensed under the BSD-style license found in the
@@ -16,8 +5,6 @@
 
 cmake_minimum_required(VERSION 3.20)
 project(arm_simple_app)
-
-# set(LIBS_DIR "${CMAKE_SOURCE_DIR}/../libs/arm")
 
 # Selects timing adapter values matching system_config.
 # Default is Ethos_U55_High_End_Embedded, simulating optimal hardware for the Corestone-300.
@@ -78,8 +65,6 @@ target_sources(
 # Include the target's bare-metal linker script
 ethosu_eval_link_options(arm_simple_app)
 
-
-
 set(arm_executor_runner_link)
 list(APPEND arm_executor_runner_link
 
@@ -99,7 +84,6 @@ target_link_options( arm_simple_app PUBLIC LINKER:-Map=arm_simple_app.map )
 
 target_include_directories(arm_simple_app PRIVATE
     /workspace/boot-camp-2025/DSP-session/CMSIS-DSP/Include
-    # /workspace/boot-camp-2025/DSP-session/CMSIS_5/CMSIS/Core/Include
 )
 
 
