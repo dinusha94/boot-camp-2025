@@ -6,6 +6,8 @@
   The polynomial SVM instance containing all parameters.
   Those parameters can be generated with the python library scikit-learn.
  */
+
+ /*Assignment Hint : arm_svm_polynomial_instance_f32 svm_models[NUM_CLASSES]; */
 arm_svm_polynomial_instance_f32 params;
 
 /*
@@ -36,6 +38,30 @@ const float32_t supportVectors[NB_SUPPORT_VECTORS*VECTOR_DIMENSION]={ 1.15831693
   with the Python code where different values could be used.
  */
 const int32_t   classes[2]={0,1};
+
+float score = 0;
+
+/* Assignment Hint : By default the CMSIS-DSP svm classifier class does not out put the score, we will use the following implementation to calculate the decision score */
+float compute_decision_score(arm_svm_polynomial_instance_f32 *svm, float32_t* input) {
+  float32_t sum = svm->intercept;  // Start with the intercept (bias term)
+  
+  for (uint32_t j = 0; j < svm->nbOfSupportVectors; j++) {
+      float32_t dot_product = 0.0f;
+
+      // Compute dot product of input and support vector
+      for (uint32_t k = 0; k < svm->vectorDimension; k++) {
+          dot_product += input[k] * svm->supportVectors[j * svm->vectorDimension + k];
+      }
+
+      // Apply polynomial kernel transformation
+      float32_t kernel_result = powf(svm->coef0 + svm->gamma * dot_product, svm->degree);
+
+      // Weighted sum using dual coefficients
+      sum += svm->dualCoefficients[j] * kernel_result;
+  }
+  
+  return sum;  // The decision score
+}
 
 
 int main()
@@ -73,8 +99,11 @@ int main()
 
   arm_svm_polynomial_predict_f32(&params, in, &result);
 
+  score = compute_decision_score(&params, in);
+
   /* Result should be 0 : First class */
   printf("Result = %d\n", result);
+  printf("Score = %f\n", score);
 
 
   /*
@@ -84,9 +113,12 @@ int main()
   in[1] = 0.0f;
 
   arm_svm_polynomial_predict_f32(&params, in, &result);
+
+  score = compute_decision_score(&params, in);
   
   /* Result should be 1 : Second class */
   printf("Result = %d\n", result);
+  printf("Score = %f\n", score);
 
   return 0;
 
