@@ -4,3 +4,9 @@
 [submodule "DSP-session/CMSIS-DSP"]
     path = DSP-session/CMSIS-DSP
     url = https://github.com/ARM-software/CMSIS-DSP.git
+[submodule "DSP-session/CMSIS_5"]
+	path = DSP-session/CMSIS_5
+	url = https://github.com/ARM-software/CMSIS_5.git
+[submodule "DSP-session/CMSIS_5"]
+    path = DSP-session/CMSIS_5
+    url = https://github.com/ARM-software/CMSIS_5.git
