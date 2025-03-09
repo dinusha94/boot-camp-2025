@@ -6,8 +6,8 @@ import os
 
 # Define the preprocessing transform
 transform = transforms.Compose([
-    transforms.Grayscale(num_output_channels=1),
-    transforms.Resize((28, 28)),
+    # transforms.Grayscale(num_output_channels=1),
+    transforms.Resize((224, 224)),
     transforms.ToTensor(),
     transforms.Normalize((0.5,), (0.5,))
 ])
@@ -34,6 +34,7 @@ def main():
 
     # Convert the processed image to a flattened numpy array
     flattened_image = processed_image.squeeze().numpy().flatten()
+    print(len(flattened_image))
 
     # Generate a C++ header file
     header_content = f"""#ifndef IMAGE_DATA_H
