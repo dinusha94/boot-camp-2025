@@ -27,7 +27,7 @@ def main():
     header_file_path = os.path.join(args.output_folder, "image_data.h")
 
     # Load and preprocess the image
-    image = Image.open(args.image_path).convert('L')
+    image = Image.open(args.image_path).convert('RGB')
 
     # Apply the transform
     processed_image = transform(image).unsqueeze(0)  # Add batch dimension

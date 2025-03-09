@@ -9,6 +9,7 @@
 ## Setting up the development environment   
 
 1. run the following command to pull the docker image    
+    `docker image pull dinusha94senz/bootcamp-2025:arm-session-1` 
     `docker image pull dinusha94senz/bootcamp-2025:arm-session-2`  
 
 2. run the following command to get the docker image ID for the pulled image  

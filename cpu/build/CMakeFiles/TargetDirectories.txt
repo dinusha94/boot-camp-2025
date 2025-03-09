@@ -1,3 +1,0 @@
-/home/dinusha/simple_executorch/build/CMakeFiles/SimpleApp.dir
-/home/dinusha/simple_executorch/build/CMakeFiles/edit_cache.dir
-/home/dinusha/simple_executorch/build/CMakeFiles/rebuild_cache.dir

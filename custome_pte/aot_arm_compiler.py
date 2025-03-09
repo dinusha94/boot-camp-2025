@@ -16,6 +16,9 @@ from pathlib import Path
 from typing import Any, Dict, Optional, Tuple
 
 import torch
+import torch.nn as nn
+from torchvision.models import mobilenet_v2, MobileNet_V2_Weights
+
 from executorch.backends.arm.arm_backend import ArmCompileSpecBuilder
 from executorch.backends.arm.arm_partitioner import ArmPartitioner
 from executorch.backends.arm.quantizer.arm_quantizer import (
@@ -40,11 +43,12 @@ from tabulate import tabulate
 from torch.ao.quantization.quantize_pt2e import convert_pt2e, prepare_pt2e
 from torch.utils.data import DataLoader
 
-from ..models import MODEL_NAME_TO_MODEL
-from ..models.model_factory import EagerModelFactory
 
 FORMAT = "[%(levelname)s %(asctime)s %(filename)s:%(lineno)s] %(message)s"
 logging.basicConfig(level=logging.WARNING, format=FORMAT)
+
+# Custome model path
+CUSTOME_MODEL_PTH = "./trained_models/mobilenetv2_finetuned.pth"
 
 
 def get_model_and_inputs_from_name(model_name: str) -> Tuple[torch.nn.Module, Any]:
@@ -56,17 +60,7 @@ def get_model_and_inputs_from_name(model_name: str) -> Tuple[torch.nn.Module, An
     if model_name in models.keys():
         model = models[model_name]()
         example_inputs = models[model_name].example_input
-    # Case 2: Model is defined in examples/models/
-    elif model_name in MODEL_NAME_TO_MODEL.keys():
-        logging.warning(
-            "Using a model from examples/models not all of these are currently supported"
-        )
-        model, example_inputs, _, _ = EagerModelFactory.create_model(
-            *MODEL_NAME_TO_MODEL[model_name]
-        )
-    # Case 3: Model is in an external python file loaded as a module.
-    #         ModelUnderTest should be a torch.nn.module instance
-    #         ModelInputs should be a tuple of inputs to the forward function
+    # Case 2: Model is defined in a python file
     elif model_name.endswith(".py"):
         import importlib.util
 
@@ -180,6 +174,24 @@ class MultipleOutputsModule(torch.nn.Module):
     example_input = (torch.randn(10, 4, 5), torch.randn(10, 4, 5))
     can_delegate = True
 
+# torch class for custome model implimentations (edit this according to your model)
+class CustomeMV2(torch.nn.Module):
+    def __init__(self):
+        super().__init__()
+        device = torch.device("cpu")
+        self.model = mobilenet_v2(weights=MobileNet_V2_Weights.DEFAULT)
+        # Modify the classifier to output two classes
+        self.model.classifier[1] = nn.Linear(self.model.last_channel, 2)
+        self.model.load_state_dict(torch.load(CUSTOME_MODEL_PTH, map_location=device))
+        self.model.eval()
+
+    def forward(self, x):
+        return self.model(x)
+
+    example_input = (torch.randn((1, 3, 224, 224)),)
+    can_delegate = True
+
+
 
 models = {
     "add": AddModule,
@@ -187,6 +199,7 @@ models = {
     "add3": AddModule3,
     "softmax": SoftmaxModule,
     "MultipleOutputsModule": MultipleOutputsModule,
+    "custome_mv2" : CustomeMV2
 }
 
 calibration_data = {
@@ -362,7 +375,7 @@ def get_args():
         "-m",
         "--model_name",
         required=True,
-        help=f"Provide model name. Valid ones: {set(list(models.keys())+list(MODEL_NAME_TO_MODEL.keys()))}",
+        # help=f"Provide model name. Valid ones: {set(list(models.keys())+list(MODEL_NAME_TO_MODEL.keys()))}",
     )
     parser.add_argument(
         "-d",
