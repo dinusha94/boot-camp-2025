@@ -1,6 +1,6 @@
 
 
-source /home/dinusha/executorch/examples/arm/ethos-u-scratch/setup_path.sh
+source /workspace/executorch/examples/arm/ethos-u-scratch/setup_path.sh
 
 cd boot-camp-2025/arm
 cmake \
